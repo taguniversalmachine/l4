@@ -44,3 +44,4 @@ errortxt = r.stderr().strip()
 # sudo apt update
 # sudo apt install --assume-yes python3.8
 # sudo apt-install --assume-yes meson
+# sudo apt install --assume-yes gcc-multilib
