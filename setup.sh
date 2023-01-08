@@ -1,4 +1,6 @@
 #!/bin/sh
+# multipass launch --disk 10G
+# git clone https://github.com/taguniversalmachine/l4.git
 # sudo 
 apt update
 apt-install --assume-yes make build-essential
@@ -19,5 +21,7 @@ apt-get install --assume-yes libncurses
 apt-get install --assume-yes texinfo
 apt-get install --assume-yes gnatmake
 apt-get install --assume-yes gprbuild
+apt-get install --assume-yes libx11-xcb1
+
 # install vscode remote development extension and generate rsa keys for build vm
 # https://dev.to/kouts/setup-vs-code-on-windows-for-development-in-a-linux-vm-or-a-remote-server-4c6n
