@@ -9,3 +9,6 @@ apt update
 apt install --assume-yes python3.8
 apt-get install --assume-yes flex bison
 apt install --assume-yes device-tree-compiler
+
+# install vscode remote development extension and generate rsa keys for build vm
+# https://dev.to/kouts/setup-vs-code-on-windows-for-development-in-a-linux-vm-or-a-remote-server-4c6n

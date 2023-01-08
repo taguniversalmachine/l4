@@ -1,8 +1,36 @@
-project('l4', 'c')
+project('myproject', 'c')
 
-make_command = find_program('make', required: true)
-make__output = run_command(make_command, capture: true, check: true).stdout().strip()
-message(make_nft_output)
+# Create targets for each of the Makefile targets
+target('all', 'phony')
+
+target('clean', 'phony')
+
+target('setup', 'phony')
+
+target('build_all', 'phony')
+
+target('build_fiasco', 'phony')
+
+target('build_l4re', 'phony')
+
+target('build_l4linux', 'phony')
+
+# Create custom targets for each of the Makefile targets that run the Makefile
+custom_target('all', command: 'make all', build_by_default: true)
+
+custom_target('clean', command: 'make clean')
+
+custom_target('setup', command: 'make setup')
+
+custom_target('build_all', command: 'make build_all')
+
+custom_target('build_fiasco', command: 'make build_fiasco')
+
+custom_target('build_l4re', command: 'make build_l4re')
+
+custom_target('build_l4linux', command: 'make build_l4linux')
+
+
 # sudo apt update
 # sudo apt-install --assume-yes make build-essential
 # sudo apt install --assume-yes software-properties-common
